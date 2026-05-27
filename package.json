@@ -1,0 +1,24 @@
+{
+  "name": "freemorseapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @morse/web dev",
+    "build": "pnpm --filter @morse/web build",
+    "preview": "pnpm --filter @morse/web preview",
+    "typecheck": "pnpm --filter @morse/web exec tsc -b",
+    "test": "pnpm --filter @morse/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/morse.git"
+  }
+}
