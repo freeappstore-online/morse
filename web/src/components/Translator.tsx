@@ -145,7 +145,6 @@ export default function Translator() {
             background: "var(--panel)",
             border: "1px solid var(--line)",
             color: "var(--ink)",
-            focusRingColor: "var(--accent)",
           }}
         />
         {direction === "morse-to-text" && (
